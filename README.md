@@ -30,10 +30,17 @@ python3 -m pip install boto3
 
 ## Usage
 
-- Run the script with your AWS account ID and region as arguments:
+- Run the script with your AWS account ID and region as arguments for exporting all the results in csv:
+
 
 ```
-python3 download_guardduty_findings.py <account_id> <region>
+python3 download_guardduty_findings.py <account_id> <region> 
+```
+
+- Run the script with your AWS account ID and region as arguments for exporting weekly results in csv:
+
+```
+python3 download_guardduty_findings_weekly.py <account_id> <region> 
 ```
 
 
