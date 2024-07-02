@@ -19,7 +19,6 @@ def getGuardDutyFindings(accountId, region):
     # Initialize a session using Amazon GuardDuty
     session = boto3.Session(region_name=region)
     guardduty = session.client('guardduty')
-
     # List detectors for the given account
     detectors = guardduty.list_detectors()
     if not detectors['DetectorIds']:
