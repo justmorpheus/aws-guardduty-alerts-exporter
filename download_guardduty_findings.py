@@ -63,7 +63,7 @@ def saveFindingsToCsv(findings, accountId, region):
                 })
         print(f"Findings have been written to {fileName}")
     except IOError:
-        print("Iinput output error")
+        print("Input Output error")
 
 def main(accountId, region):
     findings = getGuardDutyFindings(accountId, region)
